@@ -1,0 +1,366 @@
+{% extends "base.html" %}
+
+{% block title %}التحليلات والتقارير - أكاديمية المستقبل الرقمي{% endblock %}
+{% block page_title %}التحليلات والتقارير{% endblock %}
+{% block page_subtitle %}رؤى شاملة وتحليلات متقدمة لأداء المنصة التعليمية{% endblock %}
+
+{% block content %}
+<div class="card-grid">
+    <!-- Analytics KPIs -->
+    <div class="card">
+        <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-left: 1rem;">
+                <i class="fas fa-chart-line" style="font-size: 1.5rem; color: white;"></i>
+            </div>
+            <div>
+                <h3 style="color: #667eea; font-weight: 700; margin-bottom: 0.25rem;">معدل النمو</h3>
+                <div style="color: #718096; font-size: 0.9rem;">الطلاب الجدد شهرياً</div>
+            </div>
+        </div>
+        <div style="font-size: 3rem; font-weight: 900; color: #2d3748; margin-bottom: 0.5rem;">+18.5%</div>
+        <div style="color: #38a169; font-size: 0.9rem; font-weight: 600;">
+            <i class="fas fa-arrow-up" style="margin-left: 0.25rem;"></i>
+            +3.2% من الشهر الماضي
+        </div>
+    </div>
+
+    <div class="card">
+        <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #f093fb, #f5576c); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-left: 1rem;">
+                <i class="fas fa-users" style="font-size: 1.5rem; color: white;"></i>
+            </div>
+            <div>
+                <h3 style="color: #667eea; font-weight: 700; margin-bottom: 0.25rem;">معدل الاحتفاظ</h3>
+                <div style="color: #718096; font-size: 0.9rem;">بالطلاب النشطين</div>
+            </div>
+        </div>
+        <div style="font-size: 3rem; font-weight: 900; color: #2d3748; margin-bottom: 0.5rem;">87.3%</div>
+        <div style="color: #38a169; font-size: 0.9rem; font-weight: 600;">
+            <i class="fas fa-arrow-up" style="margin-left: 0.25rem;"></i>
+            +2.1% تحسن
+        </div>
+    </div>
+
+    <div class="card">
+        <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #4facfe, #00f2fe); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-left: 1rem;">
+                <i class="fas fa-clock" style="font-size: 1.5rem; color: white;"></i>
+            </div>
+            <div>
+                <h3 style="color: #667eea; font-weight: 700; margin-bottom: 0.25rem;">متوسط وقت التعلم</h3>
+                <div style="color: #718096; font-size: 0.9rem;">يومياً لكل طالب</div>
+            </div>
+        </div>
+        <div style="font-size: 3rem; font-weight: 900; color: #2d3748; margin-bottom: 0.5rem;">4.2</div>
+        <div style="color: #38a169; font-size: 0.9rem; font-weight: 600;">
+            <i class="fas fa-clock" style="margin-left: 0.25rem;"></i>
+            ساعات يومياً
+        </div>
+    </div>
+
+    <div class="card">
+        <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #fa709a, #fee140); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-left: 1rem;">
+                <i class="fas fa-star" style="font-size: 1.5rem; color: white;"></i>
+            </div>
+            <div>
+                <h3 style="color: #667eea; font-weight: 700; margin-bottom: 0.25rem;">مؤشر الرضا</h3>
+                <div style="color: #718096; font-size: 0.9rem;">تقييم الطلاب</div>
+            </div>
+        </div>
+        <div style="font-size: 3rem; font-weight: 900; color: #2d3748; margin-bottom: 0.5rem;">4.8</div>
+        <div style="color: #38a169; font-size: 0.9rem; font-weight: 600;">
+            <i class="fas fa-star" style="margin-left: 0.25rem;"></i>
+            من أصل 5 نجوم
+        </div>
+    </div>
+</div>
+
+<!-- Performance Charts -->
+<div style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+    <div class="card">
+        <h3 style="color: #667eea; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center;">
+            <i class="fas fa-chart-area" style="margin-left: 0.5rem;"></i>
+            أداء المنصة الشهري
+        </h3>
+        <div style="background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 20px; padding: 2rem; color: white; text-align: center; margin-bottom: 1rem;">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">
+                <i class="fas fa-chart-line"></i>
+            </div>
+            <div style="font-size: 1.2rem; margin-bottom: 0.5rem;">مخطط تفاعلي للأداء</div>
+            <div style="opacity: 0.8;">نمو مستمر في جميع المؤشرات</div>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; text-align: center;">
+            <div style="padding: 1rem; background: rgba(102, 126, 234, 0.1); border-radius: 15px;">
+                <div style="font-size: 1.5rem; font-weight: 700; color: #667eea;">2,847</div>
+                <div style="color: #718096; font-size: 0.8rem;">إجمالي الطلاب</div>
+            </div>
+            <div style="padding: 1rem; background: rgba(240, 147, 251, 0.1); border-radius: 15px;">
+                <div style="font-size: 1.5rem; font-weight: 700; color: #f093fb;">156</div>
+                <div style="color: #718096; font-size: 0.8rem;">الدورات النشطة</div>
+            </div>
+            <div style="padding: 1rem; background: rgba(79, 172, 254, 0.1); border-radius: 15px;">
+                <div style="font-size: 1.5rem; font-weight: 700; color: #4facfe;">87.3%</div>
+                <div style="color: #718096; font-size: 0.8rem;">معدل الإكمال</div>
+            </div>
+            <div style="padding: 1rem; background: rgba(250, 112, 154, 0.1); border-radius: 15px;">
+                <div style="font-size: 1.5rem; font-weight: 700; color: #fa709a;">1,249</div>
+                <div style="color: #718096; font-size: 0.8rem;">الشهادات</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3 style="color: #667eea; font-weight: 700; margin-bottom: 1.5rem;">التوزيع الجغرافي</h3>
+        <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1)); border-radius: 20px; padding: 1.5rem; margin-bottom: 1rem;">
+            <div style="text-align: center; margin-bottom: 1rem;">
+                <div style="font-size: 2rem; margin-bottom: 0.5rem;">🌍</div>
+                <div style="color: #667eea; font-weight: 600;">توزيع الطلاب</div>
+            </div>
+            <div style="display: grid; gap: 0.75rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="color: #2d3748; font-weight: 600;">🇸🇦 السعودية</span>
+                    <span style="color: #667eea; font-weight: 700;">45%</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="color: #2d3748; font-weight: 600;">🇦🇪 الإمارات</span>
+                    <span style="color: #f093fb; font-weight: 700;">23%</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="color: #2d3748; font-weight: 600;">🇪🇬 مصر</span>
+                    <span style="color: #4facfe; font-weight: 700;">18%</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="color: #2d3748; font-weight: 600;">🇯🇴 الأردن</span>
+                    <span style="color: #fa709a; font-weight: 700;">14%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Course Performance -->
+<div class="card" style="margin-bottom: 2rem;">
+    <h3 style="color: #667eea; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center;">
+        <i class="fas fa-trophy" style="margin-left: 0.5rem;"></i>
+        أداء الدورات التدريبية
+    </h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>الدورة</th>
+                <th>المدرب</th>
+                <th>المسجلين</th>
+                <th>معدل الإكمال</th>
+                <th>متوسط الدرجات</th>
+                <th>التقييم</th>
+                <th>الإيرادات</th>
+                <th>الحالة</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div>
+                        <div style="font-weight: 600;">تطوير تطبيقات الويب المتقدمة</div>
+                        <div style="color: #718096; font-size: 0.8rem;">8 أسابيع</div>
+                    </div>
+                </td>
+                <td>د. أحمد السالم</td>
+                <td style="font-weight: 600;">347 طالب</td>
+                <td>
+                    <div style="display: flex; align-items: center;">
+                        <div class="progress-bar" style="width: 80px; margin-left: 0.5rem;">
+                            <div class="progress-fill" style="width: 92%;"></div>
+                        </div>
+                        <span style="font-weight: 600; color: #38a169;">92%</span>
+                    </div>
+                </td>
+                <td style="font-weight: 600; color: #667eea;">87.5</td>
+                <td>
+                    <div style="display: flex; align-items: center;">
+                        <span style="font-weight: 600; color: #667eea; margin-left: 0.5rem;">4.9</span>
+                        <div style="color: #fbbf24;">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </td>
+                <td style="font-weight: 600; color: #38a169;">$52,050</td>
+                <td><span class="status-badge status-completed">ممتاز</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <div style="font-weight: 600;">أساسيات الذكاء الاصطناعي</div>
+                        <div style="color: #718096; font-size: 0.8rem;">12 أسبوع</div>
+                    </div>
+                </td>
+                <td>د. فاطمة النور</td>
+                <td style="font-weight: 600;">203 طالب</td>
+                <td>
+                    <div style="display: flex; align-items: center;">
+                        <div class="progress-bar" style="width: 80px; margin-left: 0.5rem;">
+                            <div class="progress-fill" style="width: 88%; background: linear-gradient(135deg, #f093fb, #f5576c);"></div>
+                        </div>
+                        <span style="font-weight: 600; color: #f093fb;">88%</span>
+                    </div>
+                </td>
+                <td style="font-weight: 600; color: #f093fb;">91.2</td>
+                <td>
+                    <div style="display: flex; align-items: center;">
+                        <span style="font-weight: 600; color: #f093fb; margin-left: 0.5rem;">4.8</span>
+                        <div style="color: #fbbf24;">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </td>
+                <td style="font-weight: 600; color: #38a169;">$40,600</td>
+                <td><span class="status-badge status-active">جيد جداً</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <div style="font-weight: 600;">تطوير تطبيقات الجوال</div>
+                        <div style="color: #718096; font-size: 0.8rem;">10 أسابيع</div>
+                    </div>
+                </td>
+                <td>م. سالم المطيري</td>
+                <td style="font-weight: 600;">189 طالب</td>
+                <td>
+                    <div style="display: flex; align-items: center;">
+                        <div class="progress-bar" style="width: 80px; margin-left: 0.5rem;">
+                            <div class="progress-fill" style="width: 75%; background: linear-gradient(135deg, #4facfe, #00f2fe);"></div>
+                        </div>
+                        <span style="font-weight: 600; color: #4facfe;">75%</span>
+                    </div>
+                </td>
+                <td style="font-weight: 600; color: #4facfe;">84.7</td>
+                <td>
+                    <div style="display: flex; align-items: center;">
+                        <span style="font-weight: 600; color: #4facfe; margin-left: 0.5rem;">4.7</span>
+                        <div style="color: #fbbf24;">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </td>
+                <td style="font-weight: 600; color: #38a169;">$28,350</td>
+                <td><span class="status-badge status-pending">جيد</span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Learning Trends -->
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+    <div class="card">
+        <h3 style="color: #667eea; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center;">
+            <i class="fas fa-trending-up" style="margin-left: 0.5rem;"></i>
+            اتجاهات التعلم
+        </h3>
+        <div style="display: grid; gap: 1rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1)); border-radius: 15px;">
+                <div>
+                    <div style="font-weight: 600; color: #2d3748;">البرمجة والتطوير</div>
+                    <div style="color: #718096; font-size: 0.8rem;">الأكثر طلباً</div>
+                </div>
+                <div style="text-align: left;">
+                    <div style="font-weight: 700; color: #667eea; font-size: 1.2rem;">↗ 24%</div>
+                    <div style="color: #38a169; font-size: 0.8rem;">نمو</div>
+                </div>
+            </div>
+            
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: linear-gradient(135deg, rgba(240, 147, 251, 0.1), rgba(245, 87, 108, 0.1)); border-radius: 15px;">
+                <div>
+                    <div style="font-weight: 600; color: #2d3748;">الذكاء الاصطناعي</div>
+                    <div style="color: #718096; font-size: 0.8rem;">نمو سريع</div>
+                </div>
+                <div style="text-align: left;">
+                    <div style="font-weight: 700; color: #f093fb; font-size: 1.2rem;">↗ 45%</div>
+                    <div style="color: #38a169; font-size: 0.8rem;">نمو</div>
+                </div>
+            </div>
+            
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: linear-gradient(135deg, rgba(79, 172, 254, 0.1), rgba(0, 242, 254, 0.1)); border-radius: 15px;">
+                <div>
+                    <div style="font-weight: 600; color: #2d3748;">تطبيقات الجوال</div>
+                    <div style="color: #718096; font-size: 0.8rem;">نمو ثابت</div>
+                </div>
+                <div style="text-align: left;">
+                    <div style="font-weight: 700; color: #4facfe; font-size: 1.2rem;">↗ 18%</div>
+                    <div style="color: #38a169; font-size: 0.8rem;">نمو</div>
+                </div>
+            </div>
+            
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: linear-gradient(135deg, rgba(250, 112, 154, 0.1), rgba(254, 225, 64, 0.1)); border-radius: 15px;">
+                <div>
+                    <div style="font-weight: 600; color: #2d3748;">التصميم والواجهات</div>
+                    <div style="color: #718096; font-size: 0.8rem;">نمو متوسط</div>
+                </div>
+                <div style="text-align: left;">
+                    <div style="font-weight: 700; color: #fa709a; font-size: 1.2rem;">↗ 12%</div>
+                    <div style="color: #38a169; font-size: 0.8rem;">نمو</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3 style="color: #667eea; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center;">
+            <i class="fas fa-clock" style="margin-left: 0.5rem;"></i>
+            أوقات الذروة
+        </h3>
+        <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1)); border-radius: 20px; padding: 1.5rem; margin-bottom: 1rem;">
+            <div style="text-align: center; margin-bottom: 1rem;">
+                <div style="font-size: 2rem; margin-bottom: 0.5rem;">⏰</div>
+                <div style="color: #667eea; font-weight: 600;">أنشط أوقات التعلم</div>
+            </div>
+            <div style="display: grid; gap: 0.75rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="color: #2d3748; font-weight: 600;">🌅 الصباح (8-12)</span>
+                    <span style="color: #667eea; font-weight: 700;">35%</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="color: #2d3748; font-weight: 600;">☀️ الظهيرة (12-17)</span>
+                    <span style="color: #f093fb; font-weight: 700;">28%</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="color: #2d3748; font-weight: 600;">🌆 المساء (17-22)</span>
+                    <span style="color: #4facfe; font-weight: 700;">25%</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="color: #2d3748; font-weight: 600;">🌙 الليل (22-8)</span>
+                    <span style="color: #fa709a; font-weight: 700;">12%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Analytics Actions -->
+<div class="card">
+    <h3 style="color: #667eea; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center;">
+        <i class="fas fa-tools" style="margin-left: 0.5rem;"></i>
+        أدوات التحليل
+    </h3>
+    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <button class="btn btn-primary">
+            <i class="fas fa-chart-bar"></i>
+            تقرير شامل
+        </button>
+        <button class="btn btn-secondary">
+            <i class="fas fa-file-export"></i>
+            تصدير البيانات
+        </button>
+        <button class="btn btn-secondary">
+            <i class="fas fa-calendar-alt"></i>
+            تقرير شهري
+        </button>
+        <button class="btn btn-secondary">
+            <i class="fas fa-filter"></i>
+            تصفية متقدمة
+        </button>
+        <button class="btn btn-secondary">
+            <i class="fas fa-share-alt"></i>
+            مشاركة التقرير
+        </button>
+    </div>
+</div>
+
+<div style="text-align: center; margin-top: 2rem; padding: 1rem; color: #718096; font-size: 0.9rem;">
+    تم التطوير بواسطة عمرو محمد - أكاديمية المستقبل الرقمي © 2024 | FastAPI v1.0.0
+</div>
+{% endblock %}

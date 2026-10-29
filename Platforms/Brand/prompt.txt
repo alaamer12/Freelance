@@ -1,0 +1,63 @@
+Create a wide banner image with a 3:1 aspect ratio (e.g., 2400×800 px) for the project.
+
+
+
+Canvas / Layout:
+
+Maintain a banner format with clean white padding only on the top and bottom edges.
+
+Do not apply horizontal negative padding — visuals must extend across the full banner width.
+
+Do not stretch visuals to fill the entire height — keep a centered composition inside the banner panel.
+
+Avatar Placement:
+
+Use the provided file avatar.png (remove its white background).
+
+Place it at the bottom-left corner, with margin-left = 8 px and margin-bottom = 12 px.
+
+Size: approximately 20% of the banner height, cropped in a circle with optional white outline and subtle drop shadow.
+
+Ensure the avatar is always visible and correctly used (never replaced with another image).
+
+Background:
+
+Apply a diagonal linear gradient starting from bottom-left (0,0) toward the center, using brand palette colors from brand palette.png: Oxford Blue → Palatinate Blue.
+
+Extend the gradient across the entire width, blending smoothly into the white top/bottom padding.
+
+Project Title:
+
+Place the title at the top-center, with margin-top = 8 px.
+
+Use a modern, clean font (e.g., Inter or similar) with good spacing, strong contrast, and professional styling.
+
+Logo Integration (subtle, not dominant):
+
+Incorporate logo_light.png (or similar) in a subtle way, such as:
+
+A semi-transparent watermark in the gradient background
+
+A faint geometric texture/pattern derived from the logo
+
+A light overlay integrated into the atmosphere
+
+Keep the logo ambient and blended, not standing out like the avatar.
+
+Design Integration (contextual, not floating):
+
+Place provided images within realistic device or interface mockups, such as:
+
+Desktop monitor / web browser mockup
+
+Laptop, tablet, or mobile frame
+
+Add soft depth, shadows, or glow to ground the visuals and enhance modernity.
+
+Ensure a balanced, visually engaging composition without floating elements.
+
+Style & Quality:
+
+Modern, clean, and professional aesthetic.
+
+High-resolution output, suitable for web banner use (PNG preferred).

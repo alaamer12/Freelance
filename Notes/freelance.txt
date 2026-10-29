@@ -1,0 +1,116 @@
+i learnt new things
+
+lets talk about Abdullah, my first ever customer. his job was to build a database for his work.
+the things that led to disagreement are:
+
+* at the beginning, we had poor communication about whether we wanted an admin panel or a customer panel. the issue is that he wanted both, but we did not document that well.
+
+* the second thing is that i asked him about the programmer before me. his response was something like:
+  "usually i get programmers, then they leave. we have communication issues delivering what is in my mind to them."
+
+* when i asked why they leave, he stayed silent. i did not understand this silence until i started the work. from that day until now [2026/1/25], we worked for more than 2 months. later, i understood his silence when i contacted him about payment.
+
+* i tried to be polite and told him that i would accept whatever he offers. then he responded by telling me to offer whatever i want, and that he [ABDULLAH] is not a negotiation guy. he will just pay and then tell you to stop right there and find a new programmer.
+
+* from this, i understood that he is not the type of person who adjusts with a worker once he feels they are unsuitable. he does not consider partnership, or even completing the rest of the work. this leads him to reaching a certain point, then resetting again and again.
+
+* i did not really understand why he is this type, but anyway, i learned from this to try to understand why the previous programmers before me left. of course, there is always a reason.
+
+* the second thing i noticed is that most clients prefer output-effort more than programmatic or architecture effort. by that, i mean you may create a robust architecture for an application, but when you ask for payment, he may refuse because he only wants the output.
+
+* sadly, this is the truth. you could spend hours building smart architecture, retry mechanisms, caching mechanisms, optimization techniques, and comprehensive test suites starting from unit testing to e2e testing, and for him, it is like nothing.
+
+* again, sadly, this is the truth. i do not want to build fragile systems, but i learned that i will only deliver what the customer wants. i will no longer care about anything else unless it is paid. this will prevent me from doing unpaid work, because they do not understand the importance of this effort.
+
+* something else i learned is to keep a feedback loop with some clients. i worked with clients where i did not need to ask for feedback on every small thing. i think this is because their requirements were application-level and not customized for their company or organization.
+
+* on the other hand, there are clients where you need to give feedback for every change you make. these are usually organization owners, clients with poor communication, or clients with complex requirements.
+
+* another thing i learned is that when the requirements are complex, we should do a prototype, as long as it does not take more than 3 days to get feedback. i once worked for a client for about 15 days, then the work was refused. when i tried using a prototype instead, i did it in one day with a feedback loop, and it saved me a lot of wasted work.
+
+* i learned that some clients accept giving you extra days as long as they get the best quality, while others do not like giving extra days. even if they do, it feels like they do not really want to.
+
+* i also noticed that around 60% of clients have surface fear of the future. this means they fear tools they do not fully understand, even if those tools are better suited for the project. they may also fear that these tools will become a bottleneck in the future.
+
+* they do not understand that the future is unpredictable. you can do your best to avoid rework and wasted effort, but sometimes you will need to redo things because a past decision turned out to be wrong. that is just how the world works.
+
+* some of them are also afraid of you being too smart or too dumb. if you are too smart, they fear the next worker will not match your level, so your work may be wasted if you leave. the same applies if they think you are too dumb.
+
+* honestly, i do not know if this is something wrong with me. i try to be creative, i treat every project differently, and sometimes i go outside traditions to deliver a more future-proof project.
+
+* another thing i learned is that nowadays clients use chatgpt to review what you say. this is not the problem. the problem is when they blindly trust chatgpt responses over you without discussion. they believe statistical answers without understanding how these models work or that they are probability-based and lack full context.
+
+* they do not understand that every decision in a project is based on many factors, or why we choose one approach in code instead of another suggested by a generic ai response. this is extremely frustrating. sometimes i think, if you trust ai that much, why not let it do your job.
+
+* however, there are other clients who use chatgpt properly. they review responses, and if they see contradictions, they ask you to make sure you are aligned with the project. this is totally acceptable, because they are just checking understanding. they are not programmers, and they are not expected to fully understand technical details.
+
+* the third type of chatgpt-using clients are those who rarely use it. they trust your work and leave verification to you.
+
+* i was also thinking about the main problem with Abdullah. the issue was poor communication and the fact that he did not have a clear design. he had something in his mind but could not visualize it. so i visualized it for him, then he refused, then i tried again and he refused, until i built a prototype that he started to like. after enhancing the prototype, he finally accepted it.
+
+* he is not a technical person and did not have documentation. he only had work files such as offers, sales, and similar data, mostly in excel files.
+
+* looking back, i see two ways to avoid this problem:
+
+  * doing a prototype early because the requirements were complex and communication was poor
+  * asking him to create a system analysis and design document as paid work, and if he refused, then falling back to the prototype option
+
+* something else i did not notice at first is that Abdullah had a SQL file that represented his idea of the system. it contained tables, columns, and relationships. during the conversation, he said something like:
+  "this SQL file represents what my system is from my point of view."
+
+* i admit i was wrong because:
+
+  * i ignored this statement
+  * i ignored the SQL file and even deleted some columns i thought were unnecessary
+  * i assumed some relationships were incorrect because he is not a technical person
+  * i adjusted the table relationships based on my assumptions
+
+* i knew the SQL file was AI-generated, but i did not know it was generated after deep conversations the client had. i assumed the relationships were incorrect, even though AI has strong coding understanding. this was my mistake.
+
+* i also deleted the SQL file after he shared it with me, then later realized i needed it and had to ask him to send it again. this could leave a bad impression that i do not handle work properly.
+
+* after working with different clients, i feel like i am becoming a better developer. for every client i work with, i discover new things and new ideas. step by step, i feel like i am going beyond, one by one.
+
+---
+
+**Reflection on the Snduk Project (January 2026)**
+
+Recently, I worked on a project called **Snduk**, and I learned many important lessons:
+
+1. **Assess Project Complexity Carefully**
+   The project was like any normal website with about 20 pages. However, these pages were far from ordinary. For one page, I ended up creating over **30 files and components**. I realized that having completed a 20-page project before doesn’t mean I can handle a similar project easily—it’s not about the number of pages but their **complexity**.
+
+2. **Understand the Technology Before Committing**
+   I accepted a project using technologies I had never worked with before, such as **Vue, Elysia, TRPC**, etc. Although they were the best fit technically, I didn’t give myself enough time to learn them before committing to the timeline.
+
+3. **Experimenting with Development Methodologies**
+   I tried a new development methodology in this project, seeing it as an opportunity to improve quality and learn. If it worked, it would level up our process; if not, it could result in wasted time.
+
+4. **Practical Knowledge Matters**
+   I realized I need to know **how to do things, not just theoretically**. I was developing a finance website with **zero prior knowledge about finance**, which added to the challenge. I should have allocated time to learn about the domain first.
+
+5. **Beware of “Fake Elegant AI Code”**
+   I used Claude to generate code snippets for integrating our backend with Redis. Initially, it created boilerplate code that seemed elegant. When I suggested unifying the approach for simpler APIs, the next snippet turned out to be **client-side code**, which didn’t work. I had to remove and redo all of it.
+
+6. **Consider Project Timing and External Factors**
+   The project took place **before Ramadan**, a busy month with many personal responsibilities. I didn’t factor this in when giving the client the offer, which affected my schedule.
+
+7. **Set Realistic Deadlines**
+   I set a **45-day deadline**, which overlapped with my graduation project discussion. This unintentionally put my graduation team at risk, and I didn’t realize it until the deadline was near.
+
+8. **Avoid Rushing**
+   I felt the pressure to earn quickly to help my family, but rushing led to mistakes. I learned that slowing down and planning carefully would have resulted in better outcomes.
+
+9. **Client Quality and Payment Assessment**
+
+   * Some clients are willing to pay well if they receive the **expected quality**.
+   * I learned to assess a client’s monetary behavior:
+
+     * Will they pay **well for quality**?
+     * Will they pay a **fixed price regardless of quality**?
+     * Or will they pay the **cheapest price**, even for excellent work?
+   * Sometimes it’s worth accepting **lower pay** for other benefits, such as long-term work or valuable connections.
+   * Not all clients are open to **negotiation**, especially regarding money.
+
+10. **Understand Client Terminology**
+    Clients can use **confusing or incorrect terminology**. For example, one client called the input text field a “prompt.” At first, I didn’t understand the connection. Later, I realized it came from a misunderstanding with ChatGPT: the client thought users needed to enter a system prompt, while in reality, users simply enter normal text, which is then processed using a **predefined system prompt**.

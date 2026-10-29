@@ -1,0 +1,261 @@
+{% extends "base.html" %}
+
+{% block title %}الدورات التدريبية - أكاديمية المستقبل الرقمي{% endblock %}
+{% block page_title %}الدورات التدريبية{% endblock %}
+{% block page_subtitle %}استكشف مجموعة واسعة من الدورات التقنية المتطورة{% endblock %}
+
+{% block content %}
+<div class="card-grid">
+    <!-- Course Stats -->
+    <div class="card">
+        <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-left: 1rem;">
+                <i class="fas fa-book-open" style="font-size: 1.5rem; color: white;"></i>
+            </div>
+            <div>
+                <h3 style="color: #667eea; font-weight: 700; margin-bottom: 0.25rem;">إجمالي الدورات</h3>
+                <div style="color: #718096; font-size: 0.9rem;">المتاحة حالياً</div>
+            </div>
+        </div>
+        <div style="font-size: 3rem; font-weight: 900; color: #2d3748; margin-bottom: 0.5rem;">156</div>
+        <div style="color: #38a169; font-size: 0.9rem; font-weight: 600;">
+            <i class="fas fa-arrow-up" style="margin-left: 0.25rem;"></i>
+            +12 دورة جديدة
+        </div>
+    </div>
+
+    <div class="card">
+        <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #f093fb, #f5576c); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-left: 1rem;">
+                <i class="fas fa-users" style="font-size: 1.5rem; color: white;"></i>
+            </div>
+            <div>
+                <h3 style="color: #667eea; font-weight: 700; margin-bottom: 0.25rem;">إجمالي المسجلين</h3>
+                <div style="color: #718096; font-size: 0.9rem;">في جميع الدورات</div>
+            </div>
+        </div>
+        <div style="font-size: 3rem; font-weight: 900; color: #2d3748; margin-bottom: 0.5rem;">4,523</div>
+        <div style="color: #38a169; font-size: 0.9rem; font-weight: 600;">
+            <i class="fas fa-arrow-up" style="margin-left: 0.25rem;"></i>
+            +347 تسجيل جديد
+        </div>
+    </div>
+
+    <div class="card">
+        <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #4facfe, #00f2fe); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-left: 1rem;">
+                <i class="fas fa-star" style="font-size: 1.5rem; color: white;"></i>
+            </div>
+            <div>
+                <h3 style="color: #667eea; font-weight: 700; margin-bottom: 0.25rem;">متوسط التقييم</h3>
+                <div style="color: #718096; font-size: 0.9rem;">من الطلاب</div>
+            </div>
+        </div>
+        <div style="font-size: 3rem; font-weight: 900; color: #2d3748; margin-bottom: 0.5rem;">4.8</div>
+        <div style="color: #38a169; font-size: 0.9rem; font-weight: 600;">
+            <i class="fas fa-star" style="margin-left: 0.25rem;"></i>
+            من أصل 5 نجوم
+        </div>
+    </div>
+
+    <div class="card">
+        <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #fa709a, #fee140); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-left: 1rem;">
+                <i class="fas fa-clock" style="font-size: 1.5rem; color: white;"></i>
+            </div>
+            <div>
+                <h3 style="color: #667eea; font-weight: 700; margin-bottom: 0.25rem;">ساعات التدريب</h3>
+                <div style="color: #718096; font-size: 0.9rem;">هذا الشهر</div>
+            </div>
+        </div>
+        <div style="font-size: 3rem; font-weight: 900; color: #2d3748; margin-bottom: 0.5rem;">12,845</div>
+        <div style="color: #38a169; font-size: 0.9rem; font-weight: 600;">
+            <i class="fas fa-arrow-up" style="margin-left: 0.25rem;"></i>
+            +1,234 ساعة إضافية
+        </div>
+    </div>
+</div>
+
+<!-- Course Categories -->
+<div class="card" style="margin-bottom: 2rem;">
+    <h3 style="color: #667eea; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center;">
+        <i class="fas fa-layer-group" style="margin-left: 0.5rem;"></i>
+        تصنيفات الدورات
+    </h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+        
+        <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1)); border-radius: 20px; padding: 1.5rem; border: 2px solid rgba(102, 126, 234, 0.2); text-align: center; transition: all 0.3s ease; cursor: pointer;">
+            <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                <i class="fas fa-code" style="font-size: 2rem; color: white;"></i>
+            </div>
+            <h4 style="color: #667eea; font-weight: 700; margin-bottom: 0.5rem;">البرمجة والتطوير</h4>
+            <div style="color: #718096; margin-bottom: 1rem;">45 دورة متاحة</div>
+            <div style="display: flex; justify-content: center; gap: 0.5rem;">
+                <span class="status-badge status-active">JavaScript</span>
+                <span class="status-badge status-completed">Python</span>
+            </div>
+        </div>
+
+        <div style="background: linear-gradient(135deg, rgba(240, 147, 251, 0.1), rgba(245, 87, 108, 0.1)); border-radius: 20px; padding: 1.5rem; border: 2px solid rgba(240, 147, 251, 0.2); text-align: center; transition: all 0.3s ease; cursor: pointer;">
+            <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #f093fb, #f5576c); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                <i class="fas fa-brain" style="font-size: 2rem; color: white;"></i>
+            </div>
+            <h4 style="color: #f093fb; font-weight: 700; margin-bottom: 0.5rem;">الذكاء الاصطناعي</h4>
+            <div style="color: #718096; margin-bottom: 1rem;">28 دورة متاحة</div>
+            <div style="display: flex; justify-content: center; gap: 0.5rem;">
+                <span class="status-badge status-pending">Machine Learning</span>
+                <span class="status-badge status-active">Deep Learning</span>
+            </div>
+        </div>
+
+        <div style="background: linear-gradient(135deg, rgba(79, 172, 254, 0.1), rgba(0, 242, 254, 0.1)); border-radius: 20px; padding: 1.5rem; border: 2px solid rgba(79, 172, 254, 0.2); text-align: center; transition: all 0.3s ease; cursor: pointer;">
+            <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #4facfe, #00f2fe); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                <i class="fas fa-mobile-alt" style="font-size: 2rem; color: white;"></i>
+            </div>
+            <h4 style="color: #4facfe; font-weight: 700; margin-bottom: 0.5rem;">تطبيقات الجوال</h4>
+            <div style="color: #718096; margin-bottom: 1rem;">32 دورة متاحة</div>
+            <div style="display: flex; justify-content: center; gap: 0.5rem;">
+                <span class="status-badge status-completed">React Native</span>
+                <span class="status-badge status-active">Flutter</span>
+            </div>
+        </div>
+
+        <div style="background: linear-gradient(135deg, rgba(250, 112, 154, 0.1), rgba(254, 225, 64, 0.1)); border-radius: 20px; padding: 1.5rem; border: 2px solid rgba(250, 112, 154, 0.2); text-align: center; transition: all 0.3s ease; cursor: pointer;">
+            <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #fa709a, #fee140); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                <i class="fas fa-palette" style="font-size: 2rem; color: white;"></i>
+            </div>
+            <h4 style="color: #fa709a; font-weight: 700; margin-bottom: 0.5rem;">التصميم والواجهات</h4>
+            <div style="color: #718096; margin-bottom: 1rem;">23 دورة متاحة</div>
+            <div style="display: flex; justify-content: center; gap: 0.5rem;">
+                <span class="status-badge status-active">UI/UX</span>
+                <span class="status-badge status-pending">Figma</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Featured Courses -->
+<div class="card" style="margin-bottom: 2rem;">
+    <h3 style="color: #667eea; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center;">
+        <i class="fas fa-fire" style="margin-left: 0.5rem;"></i>
+        الدورات المميزة
+    </h3>
+    <div style="display: grid; gap: 1.5rem;">
+        
+        <div style="display: flex; background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05)); border-radius: 20px; padding: 1.5rem; border: 2px solid rgba(102, 126, 234, 0.1); transition: all 0.3s ease;">
+            <div style="width: 120px; height: 120px; background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-left: 1.5rem; flex-shrink: 0;">
+                <i class="fas fa-laptop-code" style="font-size: 3rem; color: white;"></i>
+            </div>
+            <div style="flex: 1;">
+                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                    <div>
+                        <h4 style="color: #2d3748; font-weight: 700; font-size: 1.3rem; margin-bottom: 0.5rem;">تطوير تطبيقات الويب المتقدمة</h4>
+                        <div style="color: #667eea; font-weight: 600; margin-bottom: 0.5rem;">د. أحمد السالم - أستاذ هندسة البرمجيات</div>
+                        <div style="color: #718096; line-height: 1.6;">دورة شاملة لتعلم تطوير تطبيقات الويب الحديثة باستخدام React, Node.js, وقواعد البيانات المتقدمة. تشمل مشاريع عملية ومتابعة شخصية.</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 0.5rem 1rem; border-radius: 15px; font-weight: 700; margin-bottom: 0.5rem;">4.9 ⭐</div>
+                        <div style="color: #718096; font-size: 0.9rem;">145 طالب</div>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div style="display: flex; gap: 1rem;">
+                        <span class="status-badge status-active">8 أسابيع</span>
+                        <span class="status-badge status-completed">متقدم</span>
+                        <span class="status-badge status-pending">شهادة معتمدة</span>
+                    </div>
+                    <button class="btn btn-primary">التسجيل الآن</button>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex; background: linear-gradient(135deg, rgba(240, 147, 251, 0.05), rgba(245, 87, 108, 0.05)); border-radius: 20px; padding: 1.5rem; border: 2px solid rgba(240, 147, 251, 0.1); transition: all 0.3s ease;">
+            <div style="width: 120px; height: 120px; background: linear-gradient(135deg, #f093fb, #f5576c); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-left: 1.5rem; flex-shrink: 0;">
+                <i class="fas fa-robot" style="font-size: 3rem; color: white;"></i>
+            </div>
+            <div style="flex: 1;">
+                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                    <div>
+                        <h4 style="color: #2d3748; font-weight: 700; font-size: 1.3rem; margin-bottom: 0.5rem;">أساسيات الذكاء الاصطناعي</h4>
+                        <div style="color: #f093fb; font-weight: 600; margin-bottom: 0.5rem;">د. فاطمة النور - خبيرة الذكاء الاصطناعي</div>
+                        <div style="color: #718096; line-height: 1.6;">تعلم أساسيات الذكاء الاصطناعي والتعلم الآلي من الصفر. يشمل Python, TensorFlow, وتطبيقات عملية في مجالات مختلفة.</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="background: linear-gradient(135deg, #f093fb, #f5576c); color: white; padding: 0.5rem 1rem; border-radius: 15px; font-weight: 700; margin-bottom: 0.5rem;">4.8 ⭐</div>
+                        <div style="color: #718096; font-size: 0.9rem;">203 طالب</div>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div style="display: flex; gap: 1rem;">
+                        <span class="status-badge status-active">12 أسبوع</span>
+                        <span class="status-badge status-pending">مبتدئ</span>
+                        <span class="status-badge status-completed">مشاريع عملية</span>
+                    </div>
+                    <button class="btn btn-primary">التسجيل الآن</button>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex; background: linear-gradient(135deg, rgba(79, 172, 254, 0.05), rgba(0, 242, 254, 0.05)); border-radius: 20px; padding: 1.5rem; border: 2px solid rgba(79, 172, 254, 0.1); transition: all 0.3s ease;">
+            <div style="width: 120px; height: 120px; background: linear-gradient(135deg, #4facfe, #00f2fe); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin-left: 1.5rem; flex-shrink: 0;">
+                <i class="fas fa-mobile-alt" style="font-size: 3rem; color: white;"></i>
+            </div>
+            <div style="flex: 1;">
+                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                    <div>
+                        <h4 style="color: #2d3748; font-weight: 700; font-size: 1.3rem; margin-bottom: 0.5rem;">تطوير تطبيقات الجوال</h4>
+                        <div style="color: #4facfe; font-weight: 600; margin-bottom: 0.5rem;">م. سالم المطيري - مطور تطبيقات أول</div>
+                        <div style="color: #718096; line-height: 1.6;">دورة متكاملة لتطوير تطبيقات الجوال باستخدام React Native و Flutter. تشمل نشر التطبيقات على المتاجر الرسمية.</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="background: linear-gradient(135deg, #4facfe, #00f2fe); color: white; padding: 0.5rem 1rem; border-radius: 15px; font-weight: 700; margin-bottom: 0.5rem;">4.7 ⭐</div>
+                        <div style="color: #718096; font-size: 0.9rem;">89 طالب</div>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div style="display: flex; gap: 1rem;">
+                        <span class="status-badge status-pending">10 أسابيع</span>
+                        <span class="status-badge status-active">متوسط</span>
+                        <span class="status-badge status-completed">مشروع تخرج</span>
+                    </div>
+                    <button class="btn btn-primary">التسجيل الآن</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Course Management Actions -->
+<div class="card">
+    <h3 style="color: #667eea; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center;">
+        <i class="fas fa-cogs" style="margin-left: 0.5rem;"></i>
+        إدارة الدورات
+    </h3>
+    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <button class="btn btn-primary">
+            <i class="fas fa-plus"></i>
+            إضافة دورة جديدة
+        </button>
+        <button class="btn btn-secondary">
+            <i class="fas fa-edit"></i>
+            تعديل دورة
+        </button>
+        <button class="btn btn-secondary">
+            <i class="fas fa-users"></i>
+            إدارة التسجيلات
+        </button>
+        <button class="btn btn-secondary">
+            <i class="fas fa-calendar-alt"></i>
+            جدولة المحاضرات
+        </button>
+        <button class="btn btn-secondary">
+            <i class="fas fa-file-export"></i>
+            تصدير البيانات
+        </button>
+    </div>
+</div>
+
+<div style="text-align: center; margin-top: 2rem; padding: 1rem; color: #718096; font-size: 0.9rem;">
+    تم التطوير بواسطة عمرو محمد - أكاديمية المستقبل الرقمي © 2024 | FastAPI v1.0.0
+</div>
+{% endblock %}

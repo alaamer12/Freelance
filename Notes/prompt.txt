@@ -1,0 +1,19 @@
+check this fresh django project
+what i want yout to make at least 8 pages, make the pages looks super professional, modern and styled and enterprise qaulity and sign them with my name [ie. "Amr Muhamed"]
+
+the idea is to make a showcase so i can take screenshots
+
+the pages does not have to even be functional, just they look like they are working [but they are not :)]
+
+so focus on UI
+
+the project is fully arabic and RTL
+which means every button, label, data is arabic
+
+also dont use fake names like enterprise, advanced, ...etc. these names look fake but use names like real organizations/teams [in arabic] names
+
+ensure mobile responsivness, a flat design and color branding theme, try dark forest theme
+
+also to run any command do it using .venv example ".venv\Scripts\python.exe manage.py runserver"
+
+theme should not be too dominant in the backgrounds. the colors should only be used for primary/secondary buttons and accents, not the entire background

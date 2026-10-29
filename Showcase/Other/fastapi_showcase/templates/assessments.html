@@ -1,0 +1,354 @@
+{% extends "base.html" %}
+
+{% block title %}إدارة التقييمات - أكاديمية المستقبل الرقمي{% endblock %}
+{% block page_title %}إدارة التقييمات{% endblock %}
+{% block page_subtitle %}نظام شامل لتقييم أداء الطلاب ومتابعة تقدمهم الأكاديمي{% endblock %}
+
+{% block content %}
+<div class="card-grid">
+    <!-- Assessment Stats -->
+    <div class="card">
+        <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-left: 1rem;">
+                <i class="fas fa-clipboard-check" style="font-size: 1.5rem; color: white;"></i>
+            </div>
+            <div>
+                <h3 style="color: #667eea; font-weight: 700; margin-bottom: 0.25rem;">إجمالي التقييمات</h3>
+                <div style="color: #718096; font-size: 0.9rem;">المجدولة والمكتملة</div>
+            </div>
+        </div>
+        <div style="font-size: 3rem; font-weight: 900; color: #2d3748; margin-bottom: 0.5rem;">342</div>
+        <div style="color: #38a169; font-size: 0.9rem; font-weight: 600;">
+            <i class="fas fa-arrow-up" style="margin-left: 0.25rem;"></i>
+            +28 تقييم جديد
+        </div>
+    </div>
+
+    <div class="card">
+        <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #f093fb, #f5576c); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-left: 1rem;">
+                <i class="fas fa-users" style="font-size: 1.5rem; color: white;"></i>
+            </div>
+            <div>
+                <h3 style="color: #667eea; font-weight: 700; margin-bottom: 0.25rem;">المشاركون</h3>
+                <div style="color: #718096; font-size: 0.9rem;">في التقييمات</div>
+            </div>
+        </div>
+        <div style="font-size: 3rem; font-weight: 900; color: #2d3748; margin-bottom: 0.5rem;">2,156</div>
+        <div style="color: #38a169; font-size: 0.9rem; font-weight: 600;">
+            <i class="fas fa-percentage" style="margin-left: 0.25rem;"></i>
+            95.7% معدل المشاركة
+        </div>
+    </div>
+
+    <div class="card">
+        <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #4facfe, #00f2fe); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-left: 1rem;">
+                <i class="fas fa-star" style="font-size: 1.5rem; color: white;"></i>
+            </div>
+            <div>
+                <h3 style="color: #667eea; font-weight: 700; margin-bottom: 0.25rem;">متوسط الدرجات</h3>
+                <div style="color: #718096; font-size: 0.9rem;">جميع التقييمات</div>
+            </div>
+        </div>
+        <div style="font-size: 3rem; font-weight: 900; color: #2d3748; margin-bottom: 0.5rem;">84.2</div>
+        <div style="color: #38a169; font-size: 0.9rem; font-weight: 600;">
+            <i class="fas fa-arrow-up" style="margin-left: 0.25rem;"></i>
+            +3.1 نقطة تحسن
+        </div>
+    </div>
+
+    <div class="card">
+        <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #fa709a, #fee140); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-left: 1rem;">
+                <i class="fas fa-clock" style="font-size: 1.5rem; color: white;"></i>
+            </div>
+            <div>
+                <h3 style="color: #667eea; font-weight: 700; margin-bottom: 0.25rem;">التقييمات المعلقة</h3>
+                <div style="color: #718096; font-size: 0.9rem;">تحتاج مراجعة</div>
+            </div>
+        </div>
+        <div style="font-size: 3rem; font-weight: 900; color: #2d3748; margin-bottom: 0.5rem;">47</div>
+        <div style="color: #e53e3e; font-size: 0.9rem; font-weight: 600;">
+            <i class="fas fa-exclamation-triangle" style="margin-left: 0.25rem;"></i>
+            تحتاج مراجعة عاجلة
+        </div>
+    </div>
+</div>
+
+<!-- Assessment Types -->
+<div class="card" style="margin-bottom: 2rem;">
+    <h3 style="color: #667eea; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center;">
+        <i class="fas fa-layer-group" style="margin-left: 0.5rem;"></i>
+        أنواع التقييمات
+    </h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+        
+        <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1)); border-radius: 20px; padding: 1.5rem; border: 2px solid rgba(102, 126, 234, 0.2); text-align: center; transition: all 0.3s ease; cursor: pointer;">
+            <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                <i class="fas fa-file-alt" style="font-size: 2rem; color: white;"></i>
+            </div>
+            <h4 style="color: #667eea; font-weight: 700; margin-bottom: 0.5rem;">الاختبارات القصيرة</h4>
+            <div style="color: #718096; margin-bottom: 1rem;">156 اختبار</div>
+            <div style="display: flex; justify-content: center; gap: 0.5rem;">
+                <span class="status-badge status-active">15-30 دقيقة</span>
+                <span class="status-badge status-completed">تقييم سريع</span>
+            </div>
+        </div>
+
+        <div style="background: linear-gradient(135deg, rgba(240, 147, 251, 0.1), rgba(245, 87, 108, 0.1)); border-radius: 20px; padding: 1.5rem; border: 2px solid rgba(240, 147, 251, 0.2); text-align: center; transition: all 0.3s ease; cursor: pointer;">
+            <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #f093fb, #f5576c); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                <i class="fas fa-graduation-cap" style="font-size: 2rem; color: white;"></i>
+            </div>
+            <h4 style="color: #f093fb; font-weight: 700; margin-bottom: 0.5rem;">الامتحانات النهائية</h4>
+            <div style="color: #718096; margin-bottom: 1rem;">42 امتحان</div>
+            <div style="display: flex; justify-content: center; gap: 0.5rem;">
+                <span class="status-badge status-pending">2-3 ساعات</span>
+                <span class="status-badge status-active">تقييم شامل</span>
+            </div>
+        </div>
+
+        <div style="background: linear-gradient(135deg, rgba(79, 172, 254, 0.1), rgba(0, 242, 254, 0.1)); border-radius: 20px; padding: 1.5rem; border: 2px solid rgba(79, 172, 254, 0.2); text-align: center; transition: all 0.3s ease; cursor: pointer;">
+            <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #4facfe, #00f2fe); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                <i class="fas fa-laptop-code" style="font-size: 2rem; color: white;"></i>
+            </div>
+            <h4 style="color: #4facfe; font-weight: 700; margin-bottom: 0.5rem;">المشاريع العملية</h4>
+            <div style="color: #718096; margin-bottom: 1rem;">89 مشروع</div>
+            <div style="display: flex; justify-content: center; gap: 0.5rem;">
+                <span class="status-badge status-completed">أسبوع-شهر</span>
+                <span class="status-badge status-pending">تطبيق عملي</span>
+            </div>
+        </div>
+
+        <div style="background: linear-gradient(135deg, rgba(250, 112, 154, 0.1), rgba(254, 225, 64, 0.1)); border-radius: 20px; padding: 1.5rem; border: 2px solid rgba(250, 112, 154, 0.2); text-align: center; transition: all 0.3s ease; cursor: pointer;">
+            <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #fa709a, #fee140); border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                <i class="fas fa-comments" style="font-size: 2rem; color: white;"></i>
+            </div>
+            <h4 style="color: #fa709a; font-weight: 700; margin-bottom: 0.5rem;">العروض التقديمية</h4>
+            <div style="color: #718096; margin-bottom: 1rem;">55 عرض</div>
+            <div style="display: flex; justify-content: center; gap: 0.5rem;">
+                <span class="status-badge status-active">10-20 دقيقة</span>
+                <span class="status-badge status-completed">تقييم شفهي</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Upcoming Assessments -->
+<div class="card" style="margin-bottom: 2rem;">
+    <h3 style="color: #667eea; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center;">
+        <i class="fas fa-calendar-alt" style="margin-left: 0.5rem;"></i>
+        التقييمات القادمة
+    </h3>
+    <div style="display: grid; gap: 1.5rem;">
+        
+        <div style="display: flex; background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05)); border-radius: 20px; padding: 1.5rem; border: 2px solid rgba(102, 126, 234, 0.1); transition: all 0.3s ease;">
+            <div style="width: 100px; height: 100px; background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-left: 1.5rem; flex-shrink: 0; color: white;">
+                <div style="font-size: 1.5rem; font-weight: 700;">25</div>
+                <div style="font-size: 0.8rem;">سبتمبر</div>
+            </div>
+            <div style="flex: 1;">
+                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                    <div>
+                        <h4 style="color: #2d3748; font-weight: 700; font-size: 1.3rem; margin-bottom: 0.5rem;">امتحان نهائي - الذكاء الاصطناعي</h4>
+                        <div style="color: #667eea; font-weight: 600; margin-bottom: 0.5rem;">د. فاطمة النور</div>
+                        <div style="color: #718096; line-height: 1.6;">امتحان شامل يغطي جميع مواضيع الدورة من أساسيات الذكاء الاصطناعي إلى التطبيقات المتقدمة.</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 0.5rem 1rem; border-radius: 15px; font-weight: 700; margin-bottom: 0.5rem;">10:00 ص</div>
+                        <div style="color: #718096; font-size: 0.9rem;">203 طالب</div>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div style="display: flex; gap: 1rem;">
+                        <span class="status-badge status-pending">3 ساعات</span>
+                        <span class="status-badge status-active">امتحان نهائي</span>
+                        <span class="status-badge status-completed">القاعة A-101</span>
+                    </div>
+                    <button class="btn btn-primary">إدارة الامتحان</button>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex; background: linear-gradient(135deg, rgba(240, 147, 251, 0.05), rgba(245, 87, 108, 0.05)); border-radius: 20px; padding: 1.5rem; border: 2px solid rgba(240, 147, 251, 0.1); transition: all 0.3s ease;">
+            <div style="width: 100px; height: 100px; background: linear-gradient(135deg, #f093fb, #f5576c); border-radius: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-left: 1.5rem; flex-shrink: 0; color: white;">
+                <div style="font-size: 1.5rem; font-weight: 700;">28</div>
+                <div style="font-size: 0.8rem;">سبتمبر</div>
+            </div>
+            <div style="flex: 1;">
+                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                    <div>
+                        <h4 style="color: #2d3748; font-weight: 700; font-size: 1.3rem; margin-bottom: 0.5rem;">مشروع تطوير تطبيق ويب</h4>
+                        <div style="color: #f093fb; font-weight: 600; margin-bottom: 0.5rem;">د. أحمد السالم</div>
+                        <div style="color: #718096; line-height: 1.6;">تسليم المشاريع النهائية لدورة تطوير تطبيقات الويب المتقدمة مع عرض تقديمي.</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="background: linear-gradient(135deg, #f093fb, #f5576c); color: white; padding: 0.5rem 1rem; border-radius: 15px; font-weight: 700; margin-bottom: 0.5rem;">2:00 م</div>
+                        <div style="color: #718096; font-size: 0.9rem;">145 طالب</div>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div style="display: flex; gap: 1rem;">
+                        <span class="status-badge status-active">مشروع نهائي</span>
+                        <span class="status-badge status-pending">عرض 15 دقيقة</span>
+                        <span class="status-badge status-completed">أونلاين</span>
+                    </div>
+                    <button class="btn btn-primary">إدارة المشروع</button>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex; background: linear-gradient(135deg, rgba(79, 172, 254, 0.05), rgba(0, 242, 254, 0.05)); border-radius: 20px; padding: 1.5rem; border: 2px solid rgba(79, 172, 254, 0.1); transition: all 0.3s ease;">
+            <div style="width: 100px; height: 100px; background: linear-gradient(135deg, #4facfe, #00f2fe); border-radius: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-left: 1.5rem; flex-shrink: 0; color: white;">
+                <div style="font-size: 1.5rem; font-weight: 700;">30</div>
+                <div style="font-size: 0.8rem;">سبتمبر</div>
+            </div>
+            <div style="flex: 1;">
+                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                    <div>
+                        <h4 style="color: #2d3748; font-weight: 700; font-size: 1.3rem; margin-bottom: 0.5rem;">اختبار قصير - تطبيقات الجوال</h4>
+                        <div style="color: #4facfe; font-weight: 600; margin-bottom: 0.5rem;">م. سالم المطيري</div>
+                        <div style="color: #718096; line-height: 1.6;">اختبار سريع على أساسيات React Native و Flutter للوحدة الثالثة.</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="background: linear-gradient(135deg, #4facfe, #00f2fe); color: white; padding: 0.5rem 1rem; border-radius: 15px; font-weight: 700; margin-bottom: 0.5rem;">11:00 ص</div>
+                        <div style="color: #718096; font-size: 0.9rem;">89 طالب</div>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div style="display: flex; gap: 1rem;">
+                        <span class="status-badge status-completed">30 دقيقة</span>
+                        <span class="status-badge status-active">اختبار قصير</span>
+                        <span class="status-badge status-pending">القاعة B-205</span>
+                    </div>
+                    <button class="btn btn-primary">إدارة الاختبار</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Assessment Results -->
+<div class="card" style="margin-bottom: 2rem;">
+    <h3 style="color: #667eea; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center;">
+        <i class="fas fa-chart-bar" style="margin-left: 0.5rem;"></i>
+        نتائج التقييمات الأخيرة
+    </h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>التقييم</th>
+                <th>الدورة</th>
+                <th>المدرب</th>
+                <th>المشاركون</th>
+                <th>متوسط الدرجات</th>
+                <th>معدل النجاح</th>
+                <th>التاريخ</th>
+                <th>الحالة</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div>
+                        <div style="font-weight: 600;">اختبار الوحدة الثانية</div>
+                        <div style="color: #718096; font-size: 0.8rem;">JavaScript المتقدم</div>
+                    </div>
+                </td>
+                <td>تطوير تطبيقات الويب</td>
+                <td>د. أحمد السالم</td>
+                <td>145 طالب</td>
+                <td style="font-weight: 600; color: #38a169;">87.5</td>
+                <td>
+                    <div style="display: flex; align-items: center;">
+                        <span style="font-weight: 600; color: #38a169; margin-left: 0.5rem;">92%</span>
+                        <div class="progress-bar" style="width: 60px;">
+                            <div class="progress-fill" style="width: 92%;"></div>
+                        </div>
+                    </div>
+                </td>
+                <td>2024-09-20</td>
+                <td><span class="status-badge status-completed">مكتمل</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <div style="font-weight: 600;">مشروع التعلم الآلي</div>
+                        <div style="color: #718096; font-size: 0.8rem;">تطبيق عملي</div>
+                    </div>
+                </td>
+                <td>الذكاء الاصطناعي</td>
+                <td>د. فاطمة النور</td>
+                <td>203 طالب</td>
+                <td style="font-weight: 600; color: #38a169;">91.2</td>
+                <td>
+                    <div style="display: flex; align-items: center;">
+                        <span style="font-weight: 600; color: #38a169; margin-left: 0.5rem;">95%</span>
+                        <div class="progress-bar" style="width: 60px;">
+                            <div class="progress-fill" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                </td>
+                <td>2024-09-18</td>
+                <td><span class="status-badge status-completed">مكتمل</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <div style="font-weight: 600;">اختبار Flutter</div>
+                        <div style="color: #718096; font-size: 0.8rem;">أساسيات التطوير</div>
+                    </div>
+                </td>
+                <td>تطبيقات الجوال</td>
+                <td>م. سالم المطيري</td>
+                <td>89 طالب</td>
+                <td style="font-weight: 600; color: #f093fb;">78.3</td>
+                <td>
+                    <div style="display: flex; align-items: center;">
+                        <span style="font-weight: 600; color: #f093fb; margin-left: 0.5rem;">84%</span>
+                        <div class="progress-bar" style="width: 60px;">
+                            <div class="progress-fill" style="width: 84%; background: linear-gradient(135deg, #f093fb, #f5576c);"></div>
+                        </div>
+                    </div>
+                </td>
+                <td>2024-09-15</td>
+                <td><span class="status-badge status-pending">قيد المراجعة</span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Assessment Management Actions -->
+<div class="card">
+    <h3 style="color: #667eea; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center;">
+        <i class="fas fa-cogs" style="margin-left: 0.5rem;"></i>
+        إدارة التقييمات
+    </h3>
+    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <button class="btn btn-primary">
+            <i class="fas fa-plus"></i>
+            إنشاء تقييم جديد
+        </button>
+        <button class="btn btn-secondary">
+            <i class="fas fa-calendar-plus"></i>
+            جدولة امتحان
+        </button>
+        <button class="btn btn-secondary">
+            <i class="fas fa-file-import"></i>
+            استيراد الدرجات
+        </button>
+        <button class="btn btn-secondary">
+            <i class="fas fa-chart-line"></i>
+            تحليل النتائج
+        </button>
+        <button class="btn btn-secondary">
+            <i class="fas fa-file-export"></i>
+            تصدير التقارير
+        </button>
+    </div>
+</div>
+
+<div style="text-align: center; margin-top: 2rem; padding: 1rem; color: #718096; font-size: 0.9rem;">
+    تم التطوير بواسطة عمرو محمد - أكاديمية المستقبل الرقمي © 2024 | FastAPI v1.0.0
+</div>
+{% endblock %}

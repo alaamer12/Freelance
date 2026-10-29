@@ -1,0 +1,224 @@
+{% extends "base.html" %}
+
+{% block title %}لوحة التحكم - أكاديمية المستقبل الرقمي{% endblock %}
+{% block page_title %}لوحة التحكم الرئيسية{% endblock %}
+{% block page_subtitle %}نظرة شاملة على أداء المنصة التعليمية{% endblock %}
+
+{% block content %}
+<div class="card-grid">
+    <!-- Learning KPI Cards -->
+    <div class="stats-card">
+        <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+            <div style="width: 60px; height: 60px; background: #f39c12; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                <i class="fas fa-user-graduate" style="font-size: 1.5rem; color: white;"></i>
+            </div>
+        </div>
+        <h3 style="color: #2c3e50; font-weight: 700; margin-bottom: 0.5rem; text-align: center;">إجمالي الطلاب</h3>
+        <div style="color: #6c757d; font-size: 0.9rem; text-align: center; margin-bottom: 1rem;">المسجلين في المنصة</div>
+        <div class="stats-number">2,847</div>
+        <div class="stats-change positive">
+            <i class="fas fa-arrow-up" style="margin-left: 0.25rem;"></i>
+            +284 طالب جديد هذا الشهر
+        </div>
+    </div>
+
+    <div class="stats-card">
+        <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+            <div style="width: 60px; height: 60px; background: #27ae60; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                <i class="fas fa-book-open" style="font-size: 1.5rem; color: white;"></i>
+            </div>
+        </div>
+        <h3 style="color: #2c3e50; font-weight: 700; margin-bottom: 0.5rem; text-align: center;">الدورات النشطة</h3>
+        <div style="color: #6c757d; font-size: 0.9rem; text-align: center; margin-bottom: 1rem;">قيد التدريس حالياً</div>
+        <div class="stats-number">156</div>
+        <div class="stats-change positive">
+            <i class="fas fa-arrow-up" style="margin-left: 0.25rem;"></i>
+            +12 دورة جديدة هذا الأسبوع
+        </div>
+    </div>
+
+    <div class="stats-card">
+        <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+            <div style="width: 60px; height: 60px; background: #3498db; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                <i class="fas fa-chart-line" style="font-size: 1.5rem; color: white;"></i>
+            </div>
+        </div>
+        <h3 style="color: #2c3e50; font-weight: 700; margin-bottom: 0.5rem; text-align: center;">معدل الإكمال</h3>
+        <div style="color: #6c757d; font-size: 0.9rem; text-align: center; margin-bottom: 1rem;">نسبة إتمام الدورات</div>
+        <div class="stats-number">87.3%</div>
+        <div class="stats-change positive">
+            <i class="fas fa-arrow-up" style="margin-left: 0.25rem;"></i>
+            +5.2% من الشهر الماضي
+        </div>
+    </div>
+
+    <div class="stats-card">
+        <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+            <div style="width: 60px; height: 60px; background: #e74c3c; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                <i class="fas fa-certificate" style="font-size: 1.5rem; color: white;"></i>
+            </div>
+        </div>
+        <h3 style="color: #2c3e50; font-weight: 700; margin-bottom: 0.5rem; text-align: center;">الشهادات الصادرة</h3>
+        <div style="color: #6c757d; font-size: 0.9rem; text-align: center; margin-bottom: 1rem;">هذا الشهر</div>
+        <div class="stats-number">1,249</div>
+        <div class="stats-change positive">
+            <i class="fas fa-arrow-up" style="margin-left: 0.25rem;"></i>
+            +156 شهادة جديدة
+        </div>
+    </div>
+</div>
+
+<!-- Learning Progress Overview -->
+<div style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+    <div class="card">
+        <h3 style="color: #2c3e50; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center;">
+            <i class="fas fa-chart-area" style="margin-left: 0.5rem; color: #f39c12;"></i>
+            تقدم التعلم الأسبوعي
+        </h3>
+        <div style="background: #f39c12; border-radius: 8px; padding: 2rem; color: white; text-align: center;">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">
+                <i class="fas fa-chart-line"></i>
+            </div>
+            <div style="font-size: 1.2rem; margin-bottom: 0.5rem; font-weight: 600;">مخطط تفاعلي لتقدم الطلاب</div>
+            <div style="opacity: 0.9;">متوسط الوقت المقضي: 4.2 ساعات يومياً</div>
+            <div style="margin-top: 1.5rem; padding: 1.5rem; background: rgba(255,255,255,0.15); border-radius: 6px;">
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; text-align: center;">
+                    <div>
+                        <div style="font-size: 1.8rem; font-weight: 700;">92%</div>
+                        <div style="font-size: 0.9rem; opacity: 0.9;">حضور</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 1.8rem; font-weight: 700;">78%</div>
+                        <div style="font-size: 0.9rem; opacity: 0.9;">تفاعل</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 1.8rem; font-weight: 700;">85%</div>
+                        <div style="font-size: 0.9rem; opacity: 0.9;">رضا</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3 style="color: #2c3e50; font-weight: 700; margin-bottom: 1.5rem;">الإشعارات المهمة</h3>
+        <div style="display: grid; gap: 1rem;">
+            
+            <div style="padding: 1rem; background: #fff3cd; border-radius: 6px; border-right: 4px solid #f39c12; border: 1px solid #ffeaa7;">
+                <div style="font-weight: 600; color: #856404; margin-bottom: 0.5rem;">
+                    <i class="fas fa-bell" style="margin-left: 0.5rem;"></i>
+                    اجتماع المدربين
+                </div>
+                <div style="color: #6c757d; font-size: 0.9rem;">غداً الساعة 10:00 صباحاً</div>
+            </div>
+            
+            <div style="padding: 1rem; background: #f8d7da; border-radius: 6px; border-right: 4px solid #e74c3c; border: 1px solid #f5c6cb;">
+                <div style="font-weight: 600; color: #721c24; margin-bottom: 0.5rem;">
+                    <i class="fas fa-calendar-check" style="margin-left: 0.5rem;"></i>
+                    امتحان نهائي
+                </div>
+                <div style="color: #6c757d; font-size: 0.9rem;">دورة الذكاء الاصطناعي - 25 سبتمبر</div>
+            </div>
+            
+            <div style="padding: 1rem; background: #d4edda; border-radius: 6px; border-right: 4px solid #27ae60; border: 1px solid #c3e6cb;">
+                <div style="font-weight: 600; color: #155724; margin-bottom: 0.5rem;">
+                    <i class="fas fa-trophy" style="margin-left: 0.5rem;"></i>
+                    إنجاز جديد
+                </div>
+                <div style="color: #6c757d; font-size: 0.9rem;">محمد العتيبي حصل على شهادة متقدمة</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Top Courses -->
+<div class="card" style="margin-bottom: 2rem;">
+    <h3 style="color: #2c3e50; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center;">
+        <i class="fas fa-fire" style="margin-left: 0.5rem; color: #f39c12;"></i>
+        أكثر الدورات شعبية
+    </h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+        
+        <div style="background: #f8f9fa; border-radius: 8px; padding: 1.5rem; border: 1px solid #e9ecef; transition: all 0.3s ease;">
+            <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                <div style="width: 50px; height: 50px; background: #f39c12; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-left: 1rem;">
+                    <i class="fas fa-code" style="color: white; font-size: 1.2rem;"></i>
+                </div>
+                <div>
+                    <h4 style="color: #2c3e50; font-weight: 700; margin-bottom: 0.25rem;">برمجة الويب</h4>
+                    <div style="color: #6c757d; font-size: 0.9rem;">مع محمد العتيبي</div>
+                </div>
+            </div>
+            <div style="color: #495057; margin-bottom: 1rem; line-height: 1.6;">تعلم بناء مواقع ويب تفاعلية باستخدام HTML، CSS، وJavaScript</div>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div style="color: #2c3e50; font-weight: 600;">1,247 طالب</div>
+                <div style="color: #f39c12; font-weight: 600;">4.8 ★</div>
+            </div>
+        </div>
+
+        <div style="background: #f8f9fa; border-radius: 8px; padding: 1.5rem; border: 1px solid #e9ecef; transition: all 0.3s ease;">
+            <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                <div style="width: 50px; height: 50px; background: #e74c3c; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-left: 1rem;">
+                    <i class="fas fa-brain" style="color: white; font-size: 1.2rem;"></i>
+                </div>
+                <div>
+                    <h4 style="color: #2c3e50; font-weight: 700; margin-bottom: 0.25rem;">الذكاء الاصطناعي</h4>
+                    <div style="color: #6c757d; font-size: 0.9rem;">مع د. فاطمة الزهراني</div>
+                </div>
+            </div>
+            <div style="color: #495057; margin-bottom: 1rem; line-height: 1.6;">مقدمة شاملة في علوم الذكاء الاصطناعي وتعلم الآلة</div>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div style="color: #2c3e50; font-weight: 600;">892 طالب</div>
+                <div style="color: #f39c12; font-weight: 600;">4.9 ★</div>
+            </div>
+        </div>
+
+        <div style="background: #f8f9fa; border-radius: 8px; padding: 1.5rem; border: 1px solid #e9ecef; transition: all 0.3s ease;">
+            <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                <div style="width: 50px; height: 50px; background: #3498db; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-left: 1rem;">
+                    <i class="fas fa-mobile-alt" style="color: white; font-size: 1.2rem;"></i>
+                </div>
+                <div>
+                    <h4 style="color: #2c3e50; font-weight: 700; margin-bottom: 0.25rem;">تطبيقات الجوال</h4>
+                    <div style="color: #6c757d; font-size: 0.9rem;">مع أحمد القحطاني</div>
+                </div>
+            </div>
+            <div style="color: #495057; margin-bottom: 1rem; line-height: 1.6;">تعلم بناء تطبيقات الجوال باستخدام React Native وFlutter</div>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div style="color: #2c3e50; font-weight: 600;">634 طالب</div>
+                <div style="color: #f39c12; font-weight: 600;">4.7 ★</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Quick Actions -->
+<div class="card">
+    <h3 style="color: #2c3e50; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center;">
+        <i class="fas fa-bolt" style="margin-left: 0.5rem; color: #f39c12;"></i>
+        إجراءات سريعة
+    </h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+        <button class="btn btn-primary" style="padding: 1rem; border-radius: 6px; text-align: center; transition: all 0.3s ease;">
+            <i class="fas fa-plus-circle" style="font-size: 1.5rem; margin-bottom: 0.5rem; display: block;"></i>
+            إضافة دورة جديدة
+        </button>
+        <button class="btn btn-success" style="padding: 1rem; border-radius: 6px; text-align: center; transition: all 0.3s ease;">
+            <i class="fas fa-user-plus" style="font-size: 1.5rem; margin-bottom: 0.5rem; display: block;"></i>
+            تسجيل طالب جديد
+        </button>
+        <button class="btn btn-warning" style="padding: 1rem; border-radius: 6px; text-align: center; transition: all 0.3s ease;">
+            <i class="fas fa-chart-bar" style="font-size: 1.5rem; margin-bottom: 0.5rem; display: block;"></i>
+            عرض التقارير
+        </button>
+        <button class="btn btn-info" style="padding: 1rem; border-radius: 6px; text-align: center; transition: all 0.3s ease;">
+            <i class="fas fa-cog" style="font-size: 1.5rem; margin-bottom: 0.5rem; display: block;"></i>
+            إعدادات النظام
+        </button>
+    </div>
+</div>
+
+<div style="text-align: center; margin-top: 2rem; padding: 1rem; color: #718096; font-size: 0.9rem;">
+    تم التطوير بواسطة عمرو محمد - أكاديمية المستقبل الرقمي &copy; 2024 | FastAPI v1.0.0
+</div>
+{% endblock %}

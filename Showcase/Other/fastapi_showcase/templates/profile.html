@@ -1,0 +1,374 @@
+{% extends "base.html" %}
+
+{% block title %}الملف الشخصي - أكاديمية المستقبل الرقمي{% endblock %}
+{% block page_title %}الملف الشخصي{% endblock %}
+{% block page_subtitle %}إدارة الحساب والإعدادات الشخصية{% endblock %}
+
+{% block content %}
+<div style="display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; margin-bottom: 2rem;">
+    <!-- Profile Card -->
+    <div class="card">
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <div style="width: 120px; height: 120px; background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: white; font-weight: 700; font-size: 3rem;">ع.م</div>
+            <h3 style="color: #2d3748; font-weight: 700; margin-bottom: 0.5rem;">عمرو محمد</h3>
+            <div style="color: #667eea; font-weight: 600; margin-bottom: 0.5rem;">مطور ومدير النظام</div>
+            <div style="color: #718096; font-size: 0.9rem;">amr.mohamed@academy.com</div>
+        </div>
+        
+        <div style="display: grid; gap: 1rem; margin-bottom: 2rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1)); border-radius: 15px;">
+                <div>
+                    <div style="color: #718096; font-size: 0.8rem;">تاريخ الانضمام</div>
+                    <div style="font-weight: 600; color: #2d3748;">يناير 2024</div>
+                </div>
+                <i class="fas fa-calendar-alt" style="color: #667eea; font-size: 1.2rem;"></i>
+            </div>
+            
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: linear-gradient(135deg, rgba(240, 147, 251, 0.1), rgba(245, 87, 108, 0.1)); border-radius: 15px;">
+                <div>
+                    <div style="color: #718096; font-size: 0.8rem;">المشاريع المكتملة</div>
+                    <div style="font-weight: 600; color: #2d3748;">15 مشروع</div>
+                </div>
+                <i class="fas fa-project-diagram" style="color: #f093fb; font-size: 1.2rem;"></i>
+            </div>
+            
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: linear-gradient(135deg, rgba(79, 172, 254, 0.1), rgba(0, 242, 254, 0.1)); border-radius: 15px;">
+                <div>
+                    <div style="color: #718096; font-size: 0.8rem;">ساعات العمل</div>
+                    <div style="font-weight: 600; color: #2d3748;">2,847 ساعة</div>
+                </div>
+                <i class="fas fa-clock" style="color: #4facfe; font-size: 1.2rem;"></i>
+            </div>
+        </div>
+
+        <div style="display: grid; gap: 0.75rem;">
+            <button class="btn btn-primary" style="width: 100%;">
+                <i class="fas fa-edit"></i>
+                تعديل الملف الشخصي
+            </button>
+            <button class="btn btn-secondary" style="width: 100%;">
+                <i class="fas fa-camera"></i>
+                تغيير الصورة
+            </button>
+        </div>
+    </div>
+
+    <!-- Profile Details -->
+    <div class="card">
+        <h3 style="color: #667eea; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center;">
+            <i class="fas fa-user-edit" style="margin-left: 0.5rem;"></i>
+            المعلومات الشخصية
+        </h3>
+        
+        <form style="display: grid; gap: 1.5rem;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <div>
+                    <label style="display: block; color: #2d3748; font-weight: 600; margin-bottom: 0.5rem;">الاسم الأول</label>
+                    <input type="text" value="عمرو" style="width: 100%; padding: 0.75rem; border: 2px solid rgba(102, 126, 234, 0.2); border-radius: 15px; background: rgba(255, 255, 255, 0.8);">
+                </div>
+                <div>
+                    <label style="display: block; color: #2d3748; font-weight: 600; margin-bottom: 0.5rem;">اسم العائلة</label>
+                    <input type="text" value="محمد" style="width: 100%; padding: 0.75rem; border: 2px solid rgba(102, 126, 234, 0.2); border-radius: 15px; background: rgba(255, 255, 255, 0.8);">
+                </div>
+            </div>
+            
+            <div>
+                <label style="display: block; color: #2d3748; font-weight: 600; margin-bottom: 0.5rem;">البريد الإلكتروني</label>
+                <input type="email" value="amr.mohamed@academy.com" style="width: 100%; padding: 0.75rem; border: 2px solid rgba(102, 126, 234, 0.2); border-radius: 15px; background: rgba(255, 255, 255, 0.8);">
+            </div>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <div>
+                    <label style="display: block; color: #2d3748; font-weight: 600; margin-bottom: 0.5rem;">رقم الهاتف</label>
+                    <input type="tel" value="+966 50 123 4567" style="width: 100%; padding: 0.75rem; border: 2px solid rgba(102, 126, 234, 0.2); border-radius: 15px; background: rgba(255, 255, 255, 0.8);">
+                </div>
+                <div>
+                    <label style="display: block; color: #2d3748; font-weight: 600; margin-bottom: 0.5rem;">المدينة</label>
+                    <select style="width: 100%; padding: 0.75rem; border: 2px solid rgba(102, 126, 234, 0.2); border-radius: 15px; background: rgba(255, 255, 255, 0.8);">
+                        <option>الرياض</option>
+                        <option>جدة</option>
+                        <option>الدمام</option>
+                        <option>مكة المكرمة</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div>
+                <label style="display: block; color: #2d3748; font-weight: 600; margin-bottom: 0.5rem;">المسمى الوظيفي</label>
+                <input type="text" value="مطور ومدير النظام" style="width: 100%; padding: 0.75rem; border: 2px solid rgba(102, 126, 234, 0.2); border-radius: 15px; background: rgba(255, 255, 255, 0.8);">
+            </div>
+            
+            <div>
+                <label style="display: block; color: #2d3748; font-weight: 600; margin-bottom: 0.5rem;">نبذة شخصية</label>
+                <textarea rows="4" placeholder="اكتب نبذة عن نفسك..." style="width: 100%; padding: 0.75rem; border: 2px solid rgba(102, 126, 234, 0.2); border-radius: 15px; background: rgba(255, 255, 255, 0.8); resize: vertical;">مطور برمجيات متخصص في تطوير تطبيقات الويب والجوال باستخدام أحدث التقنيات. خبرة واسعة في FastAPI, React, و Python. شغوف بالتعليم التقني ومشاركة المعرفة.</textarea>
+            </div>
+            
+            <div style="display: flex; gap: 1rem;">
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-save"></i>
+                    حفظ التغييرات
+                </button>
+                <button type="button" class="btn btn-secondary">
+                    <i class="fas fa-undo"></i>
+                    إلغاء
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Skills & Expertise -->
+<div class="card" style="margin-bottom: 2rem;">
+    <h3 style="color: #667eea; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center;">
+        <i class="fas fa-code" style="margin-left: 0.5rem;"></i>
+        المهارات والخبرات
+    </h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+        
+        <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1)); border-radius: 20px; padding: 1.5rem; border: 2px solid rgba(102, 126, 234, 0.2);">
+            <h4 style="color: #667eea; font-weight: 700; margin-bottom: 1rem; display: flex; align-items: center;">
+                <i class="fas fa-laptop-code" style="margin-left: 0.5rem;"></i>
+                تطوير الواجهات الخلفية
+            </h4>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                <span class="status-badge status-completed">Python</span>
+                <span class="status-badge status-completed">FastAPI</span>
+                <span class="status-badge status-active">Django</span>
+                <span class="status-badge status-completed">Node.js</span>
+                <span class="status-badge status-pending">PostgreSQL</span>
+            </div>
+            <div style="margin-top: 1rem;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                    <span style="color: #718096;">مستوى الخبرة</span>
+                    <span style="color: #667eea; font-weight: 600;">متقدم</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 90%;"></div>
+                </div>
+            </div>
+        </div>
+
+        <div style="background: linear-gradient(135deg, rgba(240, 147, 251, 0.1), rgba(245, 87, 108, 0.1)); border-radius: 20px; padding: 1.5rem; border: 2px solid rgba(240, 147, 251, 0.2);">
+            <h4 style="color: #f093fb; font-weight: 700; margin-bottom: 1rem; display: flex; align-items: center;">
+                <i class="fas fa-paint-brush" style="margin-left: 0.5rem;"></i>
+                تطوير الواجهات الأمامية
+            </h4>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                <span class="status-badge status-completed">React</span>
+                <span class="status-badge status-active">Vue.js</span>
+                <span class="status-badge status-completed">JavaScript</span>
+                <span class="status-badge status-pending">TypeScript</span>
+                <span class="status-badge status-completed">CSS3</span>
+            </div>
+            <div style="margin-top: 1rem;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                    <span style="color: #718096;">مستوى الخبرة</span>
+                    <span style="color: #f093fb; font-weight: 600;">متقدم</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 85%; background: linear-gradient(135deg, #f093fb, #f5576c);"></div>
+                </div>
+            </div>
+        </div>
+
+        <div style="background: linear-gradient(135deg, rgba(79, 172, 254, 0.1), rgba(0, 242, 254, 0.1)); border-radius: 20px; padding: 1.5rem; border: 2px solid rgba(79, 172, 254, 0.2);">
+            <h4 style="color: #4facfe; font-weight: 700; margin-bottom: 1rem; display: flex; align-items: center;">
+                <i class="fas fa-mobile-alt" style="margin-left: 0.5rem;"></i>
+                تطوير تطبيقات الجوال
+            </h4>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                <span class="status-badge status-completed">React Native</span>
+                <span class="status-badge status-active">Flutter</span>
+                <span class="status-badge status-pending">Swift</span>
+                <span class="status-badge status-completed">Kotlin</span>
+            </div>
+            <div style="margin-top: 1rem;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                    <span style="color: #718096;">مستوى الخبرة</span>
+                    <span style="color: #4facfe; font-weight: 600;">متوسط</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 75%; background: linear-gradient(135deg, #4facfe, #00f2fe);"></div>
+                </div>
+            </div>
+        </div>
+
+        <div style="background: linear-gradient(135deg, rgba(250, 112, 154, 0.1), rgba(254, 225, 64, 0.1)); border-radius: 20px; padding: 1.5rem; border: 2px solid rgba(250, 112, 154, 0.2);">
+            <h4 style="color: #fa709a; font-weight: 700; margin-bottom: 1rem; display: flex; align-items: center;">
+                <i class="fas fa-cloud" style="margin-left: 0.5rem;"></i>
+                الحوسبة السحابية
+            </h4>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                <span class="status-badge status-completed">AWS</span>
+                <span class="status-badge status-active">Azure</span>
+                <span class="status-badge status-pending">Docker</span>
+                <span class="status-badge status-completed">Kubernetes</span>
+            </div>
+            <div style="margin-top: 1rem;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                    <span style="color: #718096;">مستوى الخبرة</span>
+                    <span style="color: #fa709a; font-weight: 600;">متوسط</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 70%; background: linear-gradient(135deg, #fa709a, #fee140);"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Security Settings -->
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+    <div class="card">
+        <h3 style="color: #667eea; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center;">
+            <i class="fas fa-shield-alt" style="margin-left: 0.5rem;"></i>
+            إعدادات الأمان
+        </h3>
+        <div style="display: grid; gap: 1rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05)); border-radius: 15px;">
+                <div>
+                    <div style="font-weight: 600; color: #2d3748;">تغيير كلمة المرور</div>
+                    <div style="color: #718096; font-size: 0.8rem;">آخر تحديث: منذ 3 أشهر</div>
+                </div>
+                <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">
+                    <i class="fas fa-key"></i>
+                    تغيير
+                </button>
+            </div>
+            
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: linear-gradient(135deg, rgba(240, 147, 251, 0.05), rgba(245, 87, 108, 0.05)); border-radius: 15px;">
+                <div>
+                    <div style="font-weight: 600; color: #2d3748;">المصادقة الثنائية</div>
+                    <div style="color: #718096; font-size: 0.8rem;">حماية إضافية للحساب</div>
+                </div>
+                <label style="display: flex; align-items: center; cursor: pointer;">
+                    <input type="checkbox" checked style="margin-left: 0.5rem;">
+                    <span style="color: #38a169; font-weight: 600;">مفعل</span>
+                </label>
+            </div>
+            
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: linear-gradient(135deg, rgba(79, 172, 254, 0.05), rgba(0, 242, 254, 0.05)); border-radius: 15px;">
+                <div>
+                    <div style="font-weight: 600; color: #2d3748;">جلسات تسجيل الدخول</div>
+                    <div style="color: #718096; font-size: 0.8rem;">إدارة الأجهزة المتصلة</div>
+                </div>
+                <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.5rem 1rem;">
+                    <i class="fas fa-laptop"></i>
+                    إدارة
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3 style="color: #667eea; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center;">
+            <i class="fas fa-bell" style="margin-left: 0.5rem;"></i>
+            إعدادات الإشعارات
+        </h3>
+        <div style="display: grid; gap: 1rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05)); border-radius: 15px;">
+                <div>
+                    <div style="font-weight: 600; color: #2d3748;">إشعارات البريد الإلكتروني</div>
+                    <div style="color: #718096; font-size: 0.8rem;">التحديثات والأخبار</div>
+                </div>
+                <label style="display: flex; align-items: center; cursor: pointer;">
+                    <input type="checkbox" checked style="margin-left: 0.5rem;">
+                    <span style="color: #38a169; font-weight: 600;">مفعل</span>
+                </label>
+            </div>
+            
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: linear-gradient(135deg, rgba(240, 147, 251, 0.05), rgba(245, 87, 108, 0.05)); border-radius: 15px;">
+                <div>
+                    <div style="font-weight: 600; color: #2d3748;">إشعارات الرسائل النصية</div>
+                    <div style="color: #718096; font-size: 0.8rem;">التنبيهات العاجلة</div>
+                </div>
+                <label style="display: flex; align-items: center; cursor: pointer;">
+                    <input type="checkbox" style="margin-left: 0.5rem;">
+                    <span style="color: #e53e3e; font-weight: 600;">معطل</span>
+                </label>
+            </div>
+            
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: linear-gradient(135deg, rgba(79, 172, 254, 0.05), rgba(0, 242, 254, 0.05)); border-radius: 15px;">
+                <div>
+                    <div style="font-weight: 600; color: #2d3748;">إشعارات المتصفح</div>
+                    <div style="color: #718096; font-size: 0.8rem;">تنبيهات فورية</div>
+                </div>
+                <label style="display: flex; align-items: center; cursor: pointer;">
+                    <input type="checkbox" checked style="margin-left: 0.5rem;">
+                    <span style="color: #38a169; font-weight: 600;">مفعل</span>
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Activity Log -->
+<div class="card">
+    <h3 style="color: #667eea; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center;">
+        <i class="fas fa-history" style="margin-left: 0.5rem;"></i>
+        سجل النشاطات الأخيرة
+    </h3>
+    <div style="display: grid; gap: 1rem;">
+        
+        <div style="display: flex; align-items: center; padding: 1rem; background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05)); border-radius: 15px;">
+            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-left: 1rem; color: white;">
+                <i class="fas fa-sign-in-alt"></i>
+            </div>
+            <div style="flex: 1;">
+                <div style="font-weight: 600; color: #2d3748;">تسجيل دخول جديد</div>
+                <div style="color: #718096; font-size: 0.9rem;">من جهاز Windows - Chrome</div>
+            </div>
+            <div style="text-align: left; color: #718096; font-size: 0.8rem;">
+                <div>اليوم</div>
+                <div>09:30 ص</div>
+            </div>
+        </div>
+
+        <div style="display: flex; align-items: center; padding: 1rem; background: linear-gradient(135deg, rgba(240, 147, 251, 0.05), rgba(245, 87, 108, 0.05)); border-radius: 15px;">
+            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #f093fb, #f5576c); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-left: 1rem; color: white;">
+                <i class="fas fa-edit"></i>
+            </div>
+            <div style="flex: 1;">
+                <div style="font-weight: 600; color: #2d3748;">تحديث الملف الشخصي</div>
+                <div style="color: #718096; font-size: 0.9rem;">تم تعديل المعلومات الشخصية</div>
+            </div>
+            <div style="text-align: left; color: #718096; font-size: 0.8rem;">
+                <div>أمس</div>
+                <div>02:15 م</div>
+            </div>
+        </div>
+
+        <div style="display: flex; align-items: center; padding: 1rem; background: linear-gradient(135deg, rgba(79, 172, 254, 0.05), rgba(0, 242, 254, 0.05)); border-radius: 15px;">
+            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #4facfe, #00f2fe); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-left: 1rem; color: white;">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <div style="flex: 1;">
+                <div style="font-weight: 600; color: #2d3748;">تفعيل المصادقة الثنائية</div>
+                <div style="color: #718096; font-size: 0.9rem;">تم تعزيز أمان الحساب</div>
+            </div>
+            <div style="text-align: left; color: #718096; font-size: 0.8rem;">
+                <div>منذ 3 أيام</div>
+                <div>11:45 ص</div>
+            </div>
+        </div>
+
+        <div style="display: flex; align-items: center; padding: 1rem; background: linear-gradient(135deg, rgba(250, 112, 154, 0.05), rgba(254, 225, 64, 0.05)); border-radius: 15px;">
+            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #fa709a, #fee140); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-left: 1rem; color: white;">
+                <i class="fas fa-key"></i>
+            </div>
+            <div style="flex: 1;">
+                <div style="font-weight: 600; color: #2d3748;">تغيير كلمة المرور</div>
+                <div style="color: #718096; font-size: 0.9rem;">تم تحديث كلمة المرور بنجاح</div>
+            </div>
+            <div style="text-align: left; color: #718096; font-size: 0.8rem;">
+                <div>منذ أسبوع</div>
+                <div>04:20 م</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="text-align: center; margin-top: 2rem; padding: 1rem; color: #718096; font-size: 0.9rem;">
+    تم التطوير بواسطة عمرو محمد - أكاديمية المستقبل الرقمي © 2024 | FastAPI v1.0.0
+</div>
+{% endblock %}

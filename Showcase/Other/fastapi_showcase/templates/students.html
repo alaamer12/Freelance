@@ -1,0 +1,333 @@
+{% extends "base.html" %}
+
+{% block title %}إدارة الطلاب - أكاديمية المستقبل الرقمي{% endblock %}
+{% block page_title %}إدارة الطلاب{% endblock %}
+{% block page_subtitle %}متابعة تقدم الطلاب وإدارة ملفاتهم الأكاديمية{% endblock %}
+
+{% block content %}
+<div class="card-grid">
+    <!-- Student Stats -->
+    <div class="card">
+        <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-left: 1rem;">
+                <i class="fas fa-user-graduate" style="font-size: 1.5rem; color: white;"></i>
+            </div>
+            <div>
+                <h3 style="color: #667eea; font-weight: 700; margin-bottom: 0.25rem;">إجمالي الطلاب</h3>
+                <div style="color: #718096; font-size: 0.9rem;">المسجلين في المنصة</div>
+            </div>
+        </div>
+        <div style="font-size: 3rem; font-weight: 900; color: #2d3748; margin-bottom: 0.5rem;">2,847</div>
+        <div style="color: #38a169; font-size: 0.9rem; font-weight: 600;">
+            <i class="fas fa-arrow-up" style="margin-left: 0.25rem;"></i>
+            +284 طالب جديد
+        </div>
+    </div>
+
+    <div class="card">
+        <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #f093fb, #f5576c); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-left: 1rem;">
+                <i class="fas fa-chart-line" style="font-size: 1.5rem; color: white;"></i>
+            </div>
+            <div>
+                <h3 style="color: #667eea; font-weight: 700; margin-bottom: 0.25rem;">الطلاب النشطون</h3>
+                <div style="color: #718096; font-size: 0.9rem;">خلال آخر 30 يوم</div>
+            </div>
+        </div>
+        <div style="font-size: 3rem; font-weight: 900; color: #2d3748; margin-bottom: 0.5rem;">2,156</div>
+        <div style="color: #38a169; font-size: 0.9rem; font-weight: 600;">
+            <i class="fas fa-percentage" style="margin-left: 0.25rem;"></i>
+            75.7% معدل النشاط
+        </div>
+    </div>
+
+    <div class="card">
+        <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #4facfe, #00f2fe); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-left: 1rem;">
+                <i class="fas fa-trophy" style="font-size: 1.5rem; color: white;"></i>
+            </div>
+            <div>
+                <h3 style="color: #667eea; font-weight: 700; margin-bottom: 0.25rem;">الخريجون</h3>
+                <div style="color: #718096; font-size: 0.9rem;">هذا العام</div>
+            </div>
+        </div>
+        <div style="font-size: 3rem; font-weight: 900; color: #2d3748; margin-bottom: 0.5rem;">1,249</div>
+        <div style="color: #38a169; font-size: 0.9rem; font-weight: 600;">
+            <i class="fas fa-certificate" style="margin-left: 0.25rem;"></i>
+            +156 شهادة جديدة
+        </div>
+    </div>
+
+    <div class="card">
+        <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+            <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #fa709a, #fee140); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-left: 1rem;">
+                <i class="fas fa-star" style="font-size: 1.5rem; color: white;"></i>
+            </div>
+            <div>
+                <h3 style="color: #667eea; font-weight: 700; margin-bottom: 0.25rem;">متوسط الدرجات</h3>
+                <div style="color: #718096; font-size: 0.9rem;">جميع الطلاب</div>
+            </div>
+        </div>
+        <div style="font-size: 3rem; font-weight: 900; color: #2d3748; margin-bottom: 0.5rem;">87.5</div>
+        <div style="color: #38a169; font-size: 0.9rem; font-weight: 600;">
+            <i class="fas fa-arrow-up" style="margin-left: 0.25rem;"></i>
+            +2.3 نقطة تحسن
+        </div>
+    </div>
+</div>
+
+<!-- Top Students -->
+<div class="card" style="margin-bottom: 2rem;">
+    <h3 style="color: #667eea; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center;">
+        <i class="fas fa-medal" style="margin-left: 0.5rem;"></i>
+        الطلاب المتميزون
+    </h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+        
+        <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1)); border-radius: 20px; padding: 1.5rem; border: 2px solid rgba(102, 126, 234, 0.2); position: relative;">
+            <div style="position: absolute; top: 1rem; right: 1rem; background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem; font-weight: 600;">🥇 الأول</div>
+            <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.5rem; margin-left: 1rem;">م.ع</div>
+                <div>
+                    <h4 style="color: #2d3748; font-weight: 700; margin-bottom: 0.25rem;">محمد العتيبي</h4>
+                    <div style="color: #667eea; font-weight: 600; margin-bottom: 0.25rem;">طالب متقدم</div>
+                    <div style="color: #718096; font-size: 0.9rem;">mohammed.otibi@email.com</div>
+                </div>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+                <div>
+                    <div style="color: #718096; font-size: 0.8rem;">الدورات المكتملة</div>
+                    <div style="font-weight: 700; color: #667eea; font-size: 1.2rem;">8</div>
+                </div>
+                <div>
+                    <div style="color: #718096; font-size: 0.8rem;">المعدل العام</div>
+                    <div style="font-weight: 700; color: #667eea; font-size: 1.2rem;">96.5</div>
+                </div>
+            </div>
+            <div style="margin-bottom: 1rem;">
+                <div style="color: #718096; font-size: 0.8rem; margin-bottom: 0.5rem;">التقدم الحالي</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 92%;"></div>
+                </div>
+                <div style="text-align: center; color: #667eea; font-weight: 600; margin-top: 0.25rem;">92%</div>
+            </div>
+            <span class="status-badge status-completed">متفوق</span>
+        </div>
+
+        <div style="background: linear-gradient(135deg, rgba(240, 147, 251, 0.1), rgba(245, 87, 108, 0.1)); border-radius: 20px; padding: 1.5rem; border: 2px solid rgba(240, 147, 251, 0.2); position: relative;">
+            <div style="position: absolute; top: 1rem; right: 1rem; background: linear-gradient(135deg, #f093fb, #f5576c); color: white; padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem; font-weight: 600;">🥈 الثاني</div>
+            <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #f093fb, #f5576c); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.5rem; margin-left: 1rem;">س.أ</div>
+                <div>
+                    <h4 style="color: #2d3748; font-weight: 700; margin-bottom: 0.25rem;">سارة الأحمد</h4>
+                    <div style="color: #f093fb; font-weight: 600; margin-bottom: 0.25rem;">طالبة متقدمة</div>
+                    <div style="color: #718096; font-size: 0.9rem;">sara.ahmed@email.com</div>
+                </div>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+                <div>
+                    <div style="color: #718096; font-size: 0.8rem;">الدورات المكتملة</div>
+                    <div style="font-weight: 700; color: #f093fb; font-size: 1.2rem;">6</div>
+                </div>
+                <div>
+                    <div style="color: #718096; font-size: 0.8rem;">المعدل العام</div>
+                    <div style="font-weight: 700; color: #f093fb; font-size: 1.2rem;">94.8</div>
+                </div>
+            </div>
+            <div style="margin-bottom: 1rem;">
+                <div style="color: #718096; font-size: 0.8rem; margin-bottom: 0.5rem;">التقدم الحالي</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 88%; background: linear-gradient(135deg, #f093fb, #f5576c);"></div>
+                </div>
+                <div style="text-align: center; color: #f093fb; font-weight: 600; margin-top: 0.25rem;">88%</div>
+            </div>
+            <span class="status-badge status-active">نشط</span>
+        </div>
+
+        <div style="background: linear-gradient(135deg, rgba(79, 172, 254, 0.1), rgba(0, 242, 254, 0.1)); border-radius: 20px; padding: 1.5rem; border: 2px solid rgba(79, 172, 254, 0.2); position: relative;">
+            <div style="position: absolute; top: 1rem; right: 1rem; background: linear-gradient(135deg, #4facfe, #00f2fe); color: white; padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem; font-weight: 600;">🥉 الثالث</div>
+            <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #4facfe, #00f2fe); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.5rem; margin-left: 1rem;">أ.ح</div>
+                <div>
+                    <h4 style="color: #2d3748; font-weight: 700; margin-bottom: 0.25rem;">أحمد الحربي</h4>
+                    <div style="color: #4facfe; font-weight: 600; margin-bottom: 0.25rem;">طالب متوسط</div>
+                    <div style="color: #718096; font-size: 0.9rem;">ahmed.harbi@email.com</div>
+                </div>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+                <div>
+                    <div style="color: #718096; font-size: 0.8rem;">الدورات المكتملة</div>
+                    <div style="font-weight: 700; color: #4facfe; font-size: 1.2rem;">5</div>
+                </div>
+                <div>
+                    <div style="color: #718096; font-size: 0.8rem;">المعدل العام</div>
+                    <div style="font-weight: 700; color: #4facfe; font-size: 1.2rem;">91.2</div>
+                </div>
+            </div>
+            <div style="margin-bottom: 1rem;">
+                <div style="color: #718096; font-size: 0.8rem; margin-bottom: 0.5rem;">التقدم الحالي</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 75%; background: linear-gradient(135deg, #4facfe, #00f2fe);"></div>
+                </div>
+                <div style="text-align: center; color: #4facfe; font-weight: 600; margin-top: 0.25rem;">75%</div>
+            </div>
+            <span class="status-badge status-pending">قيد التقدم</span>
+        </div>
+    </div>
+</div>
+
+<!-- Students Table -->
+<div class="card" style="margin-bottom: 2rem;">
+    <h3 style="color: #667eea; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center;">
+        <i class="fas fa-list" style="margin-left: 0.5rem;"></i>
+        قائمة الطلاب
+    </h3>
+    <div style="margin-bottom: 1rem; display: flex; gap: 1rem; align-items: center;">
+        <div style="flex: 1;">
+            <input type="text" placeholder="البحث عن طالب..." style="width: 100%; padding: 0.75rem; border: 2px solid rgba(102, 126, 234, 0.2); border-radius: 15px; background: rgba(255, 255, 255, 0.8);">
+        </div>
+        <select style="padding: 0.75rem; border: 2px solid rgba(102, 126, 234, 0.2); border-radius: 15px; background: rgba(255, 255, 255, 0.8);">
+            <option>جميع المستويات</option>
+            <option>مبتدئ</option>
+            <option>متوسط</option>
+            <option>متقدم</option>
+        </select>
+        <button class="btn btn-secondary">
+            <i class="fas fa-filter"></i>
+            تصفية
+        </button>
+    </div>
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th>الطالب</th>
+                <th>البريد الإلكتروني</th>
+                <th>الدورات المسجلة</th>
+                <th>التقدم</th>
+                <th>المعدل</th>
+                <th>الحالة</th>
+                <th>تاريخ التسجيل</th>
+                <th>الإجراءات</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div style="display: flex; align-items: center;">
+                        <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; margin-left: 0.75rem;">م.ع</div>
+                        <div>
+                            <div style="font-weight: 600;">محمد العتيبي</div>
+                            <div style="color: #718096; font-size: 0.8rem;">ID: STU-2024-001</div>
+                        </div>
+                    </div>
+                </td>
+                <td>mohammed.otibi@email.com</td>
+                <td>3 دورات</td>
+                <td>
+                    <div class="progress-bar" style="width: 100px;">
+                        <div class="progress-fill" style="width: 92%;"></div>
+                    </div>
+                    <span style="font-size: 0.8rem; color: #667eea;">92%</span>
+                </td>
+                <td style="font-weight: 600; color: #38a169;">96.5</td>
+                <td><span class="status-badge status-completed">متفوق</span></td>
+                <td>2024-01-15</td>
+                <td>
+                    <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.5rem;">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="display: flex; align-items: center;">
+                        <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #f093fb, #f5576c); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; margin-left: 0.75rem;">س.أ</div>
+                        <div>
+                            <div style="font-weight: 600;">سارة الأحمد</div>
+                            <div style="color: #718096; font-size: 0.8rem;">ID: STU-2024-002</div>
+                        </div>
+                    </div>
+                </td>
+                <td>sara.ahmed@email.com</td>
+                <td>2 دورة</td>
+                <td>
+                    <div class="progress-bar" style="width: 100px;">
+                        <div class="progress-fill" style="width: 88%; background: linear-gradient(135deg, #f093fb, #f5576c);"></div>
+                    </div>
+                    <span style="font-size: 0.8rem; color: #f093fb;">88%</span>
+                </td>
+                <td style="font-weight: 600; color: #38a169;">94.8</td>
+                <td><span class="status-badge status-active">نشط</span></td>
+                <td>2024-02-10</td>
+                <td>
+                    <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.5rem;">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="display: flex; align-items: center;">
+                        <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #4facfe, #00f2fe); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; margin-left: 0.75rem;">أ.ح</div>
+                        <div>
+                            <div style="font-weight: 600;">أحمد الحربي</div>
+                            <div style="color: #718096; font-size: 0.8rem;">ID: STU-2024-003</div>
+                        </div>
+                    </div>
+                </td>
+                <td>ahmed.harbi@email.com</td>
+                <td>4 دورات</td>
+                <td>
+                    <div class="progress-bar" style="width: 100px;">
+                        <div class="progress-fill" style="width: 75%; background: linear-gradient(135deg, #4facfe, #00f2fe);"></div>
+                    </div>
+                    <span style="font-size: 0.8rem; color: #4facfe;">75%</span>
+                </td>
+                <td style="font-weight: 600; color: #38a169;">91.2</td>
+                <td><span class="status-badge status-pending">قيد التقدم</span></td>
+                <td>2024-01-28</td>
+                <td>
+                    <button class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.5rem;">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Student Management Actions -->
+<div class="card">
+    <h3 style="color: #667eea; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center;">
+        <i class="fas fa-tools" style="margin-left: 0.5rem;"></i>
+        إدارة الطلاب
+    </h3>
+    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <button class="btn btn-primary">
+            <i class="fas fa-user-plus"></i>
+            إضافة طالب جديد
+        </button>
+        <button class="btn btn-secondary">
+            <i class="fas fa-file-import"></i>
+            استيراد قائمة طلاب
+        </button>
+        <button class="btn btn-secondary">
+            <i class="fas fa-envelope"></i>
+            إرسال إشعار جماعي
+        </button>
+        <button class="btn btn-secondary">
+            <i class="fas fa-graduation-cap"></i>
+            تخريج دفعة
+        </button>
+        <button class="btn btn-secondary">
+            <i class="fas fa-file-export"></i>
+            تصدير البيانات
+        </button>
+    </div>
+</div>
+
+<div style="text-align: center; margin-top: 2rem; padding: 1rem; color: #718096; font-size: 0.9rem;">
+    تم التطوير بواسطة عمرو محمد - أكاديمية المستقبل الرقمي © 2024 | FastAPI v1.0.0
+</div>
+{% endblock %}
